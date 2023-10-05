@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(212, 212, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    max-width: 100%;
+}
+.container .card{
+    background-color: white;
+    width: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0 8px 0px #0000002e;
+    overflow: hidden;
+}
+@media (max-width: 767px) {
+    .card {
+        width: 360px !important;
+    }
+}
+.card .head{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .head img{
+    width: 50px;
+}
+.card .head i{
+    font-size: 28px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.card .head i:hover {
+    color: red;
+}
+.card .images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.card .images img{
+    width: 280px;
+    height: 155px;
+    display: none;
+}
+.card .images img.active{
+    display: block;
+}
+.card .text h1{
+    text-transform: uppercase;
+    margin: 25px 0 5px;
+}
+.card .rate{
+    margin: 15px 0;
+}
+.card .price-color{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.card .price span{
+    font-size: 23px;
+    font-weight: bold;
+}
+.card .color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+.card .color span{
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.card .color span.beige{
+    background-color: rgb(219, 219, 187);
+}
+.card .color span.beige.active{
+    border: 3px solid white;
+    outline: 3px solid rgb(219, 219, 187);
+}
+.card .color span.black{
+    background-color: black;
+}
+.card .color span.black.active {
+    border: 3px solid white;
+    outline: 3px solid black;
+}
+.card .color span.blue{
+    background-color: blue;
+}
+.card .color span.blue.active {
+    border: 3px solid white;
+    outline: 3px solid blue;
+}
+.card .color span.active{
+    transform: scale(1.1);
+}
+.card .buttonAdd button{
+    width: 100%;
+    padding: 10px;
+    background: white;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
